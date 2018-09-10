@@ -1,8 +1,10 @@
+package arr;
+
 import java.util.Arrays;
 
 public class SDArray extends Array {
 
-    private int length = 0;
+    private int length;
     private double[] elements;
 
     public SDArray() {
@@ -78,7 +80,7 @@ public class SDArray extends Array {
                 .append(super.toString())
                 .append("\nLength: ")
                 .append(length)
-                .append("\nArray:");
+                .append("\narr.Array:");
 
         for (int i = 0; i < length; i++) {
             builderStr.append(" [").append(elements[i]).append("]");

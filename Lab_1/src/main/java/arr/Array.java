@@ -1,8 +1,10 @@
+package arr;
+
 public abstract class Array {
 
     private int dimension;
 
-    protected Array(int dimension) {
+    Array(int dimension) {
         this.dimension = dimension;
     }
 
