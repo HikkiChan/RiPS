@@ -26,6 +26,13 @@ public class Main {
         SDArray b = new SDArray(arr1);
         a.sumArrays(b);
 
+        double[] arr2 = {1, 2, 3, 4, 5};
+        SDArray d = new SDArray(arr2);
+        a.sumArrays(d);
+        System.out.println(a.toString());
+        a.difArrays(d);
+        System.out.println(a.toString());
+
         b.setElements(a);
 
         b.setElements(10, 1);
@@ -33,6 +40,5 @@ public class Main {
 
         SDArray c = new SDArray();
         c.setElements(b);
-
     }
 }

@@ -15,5 +15,4 @@ public abstract class Array {
     public String toString() {
         return "A " + getDimension() + "-dimensional array.";
     }
-
 }

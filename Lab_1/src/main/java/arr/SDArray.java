@@ -45,6 +45,16 @@ public class SDArray extends Array {
         }
     }
 
+    public void difArrays(SDArray arrayA) {
+        if (this.length == arrayA.length) {
+            for (int i = 0; i < this.length; i++) {
+                this.elements[i] -= arrayA.elements[i];
+            }
+        } else {
+            System.out.println("Error: different length of arrays");
+        }
+    }
+
     public void multiplyArray(double num) {
         for (int i = 0; i < this.length; i++) {
             this.elements[i] *= num;
