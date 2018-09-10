@@ -1,25 +1,17 @@
 public abstract class Array {
-    private int dimension = 0;
 
-    public Array() {
-        dimension = 0;
-    }
+    private int dimension;
 
-    public Array(int dimension) {
+    protected Array(int dimension) {
         this.dimension = dimension;
     }
 
-    public double getDimension() {
+    private double getDimension() {
         return dimension;
     }
 
-    protected void setDimension(int dimension) {
-        this.dimension = dimension;
-    }
-
     public String toString() {
-        String str = new StringBuilder().append("A ").append(dimension).append("-dimensional array.\n").toString();
-        return str;
+        return "A " + getDimension() + "-dimensional array.";
     }
 
 }

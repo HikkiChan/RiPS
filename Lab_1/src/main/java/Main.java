@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        ODArray a = new ODArray(5);
+
+        SDArray a = new SDArray(5);
         System.out.println(a.toString());
 
         a.setElements(1, 10);
@@ -13,9 +14,6 @@ public class Main {
         a.sort();
         System.out.println(a.toString());
 
-        a.sumArrays(a);
-        System.out.println(a.toString());
-
         a.sumArrayAndConst(5);
         System.out.println(a.toString());
 
@@ -23,7 +21,7 @@ public class Main {
         System.out.println(a.toString());
 
         double[] arr1 = {1, 3, 10, 2};
-        ODArray b = new ODArray(arr1);
+        SDArray b = new SDArray(arr1);
         a.sumArrays(b);
 
         b.setElements(a);
@@ -31,7 +29,8 @@ public class Main {
         b.setElements(10, 1);
         b.setElements(1);
 
-        ODArray c = new ODArray();
+        SDArray c = new SDArray();
         c.setElements(b);
+
     }
 }
