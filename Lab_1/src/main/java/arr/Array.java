@@ -7,7 +7,7 @@ package arr;
  * @see SDArray
  */
 
-public abstract class Array {
+class Array {
     /** The property is the dimension of the array */
     private int dimension;
 
