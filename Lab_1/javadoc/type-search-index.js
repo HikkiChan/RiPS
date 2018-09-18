@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"arr","l":"Array"},{"p":"<Unnamed>","l":"Main"},{"p":"arr","l":"SDArray"}]
