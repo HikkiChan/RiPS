@@ -1,5 +1,5 @@
+import builder.SearchEngine;
 import builder.TariffPlusBuilder;
-import builder.Worker;
 import client.Client;
 import tariffs.Tariff;
 import tariffs.TariffPlus;
@@ -33,10 +33,13 @@ public class Main {
 
         listTariffs.sort(new TariffComparator());
 
-        System.out.println(Worker.searchTariffForCostMinuteInNW(listTariffs, 10));
+        System.out.println(SearchEngine.searchTariffForCostMinuteInNW(listTariffs, 10));
         System.out.println("Number  clients = " + listClients.size());
         for (Tariff tariffBonus : listTariffs) {
             System.out.println(tariffBonus);
+        }
+        for (Client client : listClients) {
+            System.out.println(client);
         }
     }
 }

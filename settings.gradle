@@ -1,4 +1,5 @@
 rootProject.name = 'RiPS'
 include 'Lab_1'
 include 'Lab_2'
+include 'Lab_3'
 

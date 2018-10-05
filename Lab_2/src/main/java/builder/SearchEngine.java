@@ -13,7 +13,7 @@ import java.util.List;
  * @see Tariff
  * @since 1.0
  */
-public class Worker {
+public class SearchEngine {
     /**
      * The search method of the tariff plan by parameter "costMinuteInNW".
      *
