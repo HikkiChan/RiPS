@@ -9,18 +9,18 @@ fun sortSentences(text: Text) = deleteCode(text).apply {
 fun searchWord(text: Text): String {
     val clearedByCode = deleteCode(text)
     val firstSentence = deleteMarks(clearedByCode[0])
-    val otherSentences = deleteMarks(clearedByCode[1])
-
-    for (sentencesCount in (2..(clearedByCode.size-1))){
-        otherSentences.addAll(deleteMarks(clearedByCode[sentencesCount]))
+    val otherSentencesWords = ArrayList<String>().apply {
+        for (i in (1..(clearedByCode.size - 1))) {
+            addAll(deleteMarks(clearedByCode[i]))
+        }
     }
 
-    return searchWordEngine(firstSentence, otherSentences)
+    return searchWordEngine(firstSentence, otherSentencesWords)
 }
 
 fun searchWordEngine(firstSentence: ArrayList<String>, otherSentences: ArrayList<String>): String {
 
-    for (wordCount in (1..(firstSentence.size-1))) {
+    for (wordCount in (1..(firstSentence.size - 1))) {
         if (!otherSentences.contains(firstSentence[wordCount])) {
             return firstSentence[wordCount]
         }
