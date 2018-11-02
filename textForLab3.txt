@@ -1,0 +1,10 @@
+﻿In this tutorial, you will learn to use TFLearn and TensorFlow to estimate
+Titanic passengers likelihood of survival based on their personal information. To
+tackle this classic machine learning task, we are going to build a deep neural
+network classifier. Make sure you have TensorFlow and TFLearn installed. If
+you dont, please follow these instructions. On April 15, 1912, the Titanic
+sank after colliding with an iceberg, killing 1502 out of 2224 passengers and
+crew. Although there was some element of luck involved in surviving the
+sinking, some groups of people were more likely to survive than others, such as
+women, children, and the upper-class. In this tutorial, we carry out an analysis
+to discover who these people are. Просто текст, написанный на русском языке. Code:<private static void main(String[] args) {System.out.println("Hello, World!")}>.
