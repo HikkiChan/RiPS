@@ -1,10 +1,8 @@
 import java.util.*
-import java.util.concurrent.locks.ReentrantLock
 import kotlin.collections.ArrayList
 
 class FillingUnit(name: String) : Thread(name) {
 
-    private val lock = ReentrantLock()
     private var queue = Collections.synchronizedList(ArrayList<Car>())
 
     init {
@@ -31,13 +29,11 @@ class FillingUnit(name: String) : Thread(name) {
                     sleep(100)
                 }
                 with(queue[0]) {
-                    lock.lock()
                     println("${this@FillingUnit.name} starts to fuel ${this.name}")
                     isBeingServed = true
                     Thread.sleep((10000 * Math.random()).toLong())
                     println("${this@FillingUnit.name} finishes fuelling ${this.name}")
                     isServed = true
-                    lock.unlock()
                 }
                 queue.removeAt(0)
             } catch (e: InterruptedException) {
