@@ -4,3 +4,6 @@ include 'Lab_2'
 include 'Lab_3'
 include 'Lab_4_primitives'
 include 'Lab_4_swn'
+include 'Lab_5_1'
+include 'Lab_5_2'
+

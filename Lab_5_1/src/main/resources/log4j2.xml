@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <property name="pattern">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{5} - %msg%n</property>
+    </Properties>
+    <ThresholdFilter level="trace"/>
+    <Appenders>
+        <File name="MainFile" fileName="log_files/main.log">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+        <File name="ServerFile" fileName="log_files/server.log">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+        <File name="ClientFile" fileName="log_files/client.log">
+            <PatternLayout pattern="${pattern}"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name = "Server" level="debug"  additivity="false">
+            <Appender-ref ref="ServerFile" level="trace"/>
+        </Logger>
+        <Logger name = "Client" level="debug"  additivity="false">
+            <Appender-ref ref="ClientFile" level="trace"/>
+        </Logger>
+        <Root level="debug">
+            <Appender-ref ref="MainFile" level="trace"/>
+        </Root>
+    </Loggers>
+</Configuration>
