@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bsu.by" xmlns="http://www.bsu.by"
+    elementFormDefault="qualified">
+
+    <xs:simpleType name="species">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LITE" />
+            <xs:enumeration value="MAXIMUM" />
+            <xs:enumeration value="SMART" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="tariffs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tariff" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="species" type="species" />
+                            <xs:element name="subscriptionFee" type="xs:int" />
+                            <xs:element name="costMinuteInNW" type="xs:int" />
+                            <xs:element name="costMinuteInOtherNW" type="xs:int" />
+                            <xs:element name="costSms" type="xs:int" />
+                            <xs:element name="costInternet" type="xs:int" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
