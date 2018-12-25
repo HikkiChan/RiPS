@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tariffList name="My Tariffs">
+    <tariff>
+        <name>Tariff1</name>
+        <species>LITE</species>
+        <subscriptionFee>25</subscriptionFee>
+        <costMinuteInNW>25</costMinuteInNW>
+        <costMinuteInOtherNW>25</costMinuteInOtherNW>
+        <costSms>25</costSms>
+        <costInternet>25</costInternet>
+    </tariff>
+    <tariff>
+        <name>Tariff2</name>
+        <species>SMART</species>
+        <subscriptionFee>50</subscriptionFee>
+        <costMinuteInNW>15</costMinuteInNW>
+        <costMinuteInOtherNW>15</costMinuteInOtherNW>
+        <costSms>15</costSms>
+        <costInternet>15</costInternet>
+    </tariff>
+    <tariff>
+        <name>Tariff3</name>
+        <species>MAXIMUM</species>
+        <subscriptionFee>100</subscriptionFee>
+        <costMinuteInNW>10</costMinuteInNW>
+        <costMinuteInOtherNW>10</costMinuteInOtherNW>
+        <costSms>10</costSms>
+        <costInternet>10</costInternet>
+    </tariff>
+</tariffList>
