@@ -23,7 +23,7 @@ object StaxParser {
 
     @Throws(ParsingException::class)
     fun parse(): List<Tariff> {
-        println("Started parsing tariff file")
+        println("Started parsing tariffs file")
         val tariffs = ArrayList<Tariff>()
         val factory = XMLInputFactory.newInstance()
         try {
@@ -105,7 +105,7 @@ object StaxParser {
             throw ParsingException("Error has occurred while parsing file", e)
         }
 
-        println("Finished parsing vouchers file")
+        println("Finished parsing tariffs file")
 
         return tariffs
     }

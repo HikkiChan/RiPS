@@ -14,7 +14,7 @@ object DomParser {
 
     @Throws(ParsingException::class)
     fun parse(): List<Tariff> {
-        println("Started parsing tariff file")
+        println("Started parsing tariffs file")
         val res = ArrayList<Tariff>()
         val factory = DocumentBuilderFactory.newInstance()
         val inputFile = File("lab_7/input.xml")

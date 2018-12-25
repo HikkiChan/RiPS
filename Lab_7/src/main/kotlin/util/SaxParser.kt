@@ -11,7 +11,7 @@ object SaxParser {
 
     @Throws(ParsingException::class)
     fun parse(): List<Tariff> {
-        println("Started parsing tariff file")
+        println("Started parsing tariffs file")
         val result: List<Tariff>
         try {
             val reader = XMLReaderFactory.createXMLReader()
@@ -29,7 +29,7 @@ object SaxParser {
             throw ParsingException("Error has occurred while creating XMLReaderFactory", e)
         }
 
-        println("Finished parsing tariff file")
+        println("Finished parsing tariffs file")
         return result
     }
 }
